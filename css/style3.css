@@ -1,0 +1,41 @@
+/* Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 */
+
+/* CSS files add styling rules to your content */
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding-left: 200px;
+  /* padding-right: 100px; */
+
+  /* padding: auto; */
+  position: relative;
+  top: 650px;
+  /* margin-top: 70%; */
+  margin-left: 20%;
+  margin-right: 20%;
+  /* background-color: blue; */
+}
+
+.box {
+  border: 3px solid #666;
+  background-color: #ddd;
+  border-radius: .5em;
+  padding: 10px;
+  z-index: 5;
+  cursor: move;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+}
+
+.box.over {
+  border: 3px dotted #666;
+}
+
+[draggable] {
+  user-select: none;
+}
