@@ -182,11 +182,14 @@ function init() {
         new THREE.CylinderGeometry( 0.5, 0.5, 1, 12 )
     ];
 
-    const content = document.getElementById( 'content' );
 
     let modelName = ["GROUND TRUTH", "DSAG",  "ACTOR", "MUGL"]
-
+    let div_id = ["gr-block", "dsag-block",  "actor-block", "mugl-block"]
+    let content; 
     for ( let i = 0; i < 4; i ++ ) {
+
+        content = document.getElementById(div_id[i]);
+        
 
         const scene = new THREE.Scene();
 
