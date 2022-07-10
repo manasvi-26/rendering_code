@@ -57,10 +57,6 @@ if __name__ == "__main__":
     for k in data.keys():
         print(k,data[k].shape)
         
-
-
-
-    
     #create main folder
     if not os.path.exists('ACTOR_DATA'):
         os.mkdir('ACTOR_DATA')
